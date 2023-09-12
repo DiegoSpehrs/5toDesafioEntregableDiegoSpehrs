@@ -29,7 +29,7 @@ app.use(cookieParser('secreKeyCookies'))
 
 app.use(session({
     store: new mongoStore({
-        mongoURL:'mongodb+srv://diegospehrs:Villero1908@cluster0.uvqkqut.mongodb.net/2daPreEntregaDS?retryWrites=true&w=majority'
+        mongoUrl:'mongodb+srv://diegospehrs:Villero1908@cluster0.uvqkqut.mongodb.net/2daPreEntregaDS?retryWrites=true&w=majority'
     }),
     secret: 'secretSession',
     cookie: {maxAge:60000}

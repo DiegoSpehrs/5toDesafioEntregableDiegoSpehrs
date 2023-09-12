@@ -2,21 +2,21 @@ import mongoose from "mongoose";
 
 const usersSchema = new mongoose.Schema({
     first_name:{
-        typeof: 'string',
-        require: true
+        type: 'string',
+        required: true
     },
     last_name:{
-        typeof: 'string',
-        require: true
+        type: 'string',
+        required: true
     },
     username:{
-        typeof: 'string',
-        require: true,
+        type: 'string',
+        required: true,
         unique: true
     },
     password:{
-        typeof: 'string',
-        require: true
+        type: 'string',
+        required: true
     },
     isAdmin:{
         type: 'boolean',
