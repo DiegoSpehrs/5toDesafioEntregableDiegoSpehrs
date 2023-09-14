@@ -18,6 +18,10 @@ const usersSchema = new mongoose.Schema({
         type: 'string',
         required: true
     },
+    email:{
+        type: 'string',
+        required: true
+    },
     isAdmin:{
         type: 'boolean',
         default: false
