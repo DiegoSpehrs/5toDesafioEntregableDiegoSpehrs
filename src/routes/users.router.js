@@ -13,8 +13,7 @@ router.post('/singup',async (req, res) => {
         return res.status(400).json({message:'User already used'})
     }
     const newUser = await userMongo.createUser({...req.body})
-    res.status(200).json({message:'User created',user:newUser})
-    //res.redirect('http://localhost:8080/api/views/clientHome')
+    res.redirect('http://localhost:8080/api/views/clientHome')
 })
 
 router.get('/home',async (req, res) => {

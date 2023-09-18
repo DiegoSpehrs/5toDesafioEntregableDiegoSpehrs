@@ -11,7 +11,6 @@ router.post('/', async (req, res) => {
     }
     const userDB = await userMongo.findUser(username)
     req.session['username'] = username
-    res.status(200).json({message:'Session created', user:userDB})
     const allProducts = await productMongo.getProducts();
     res.render("bodyHome",{ products: allProducts })
 })
